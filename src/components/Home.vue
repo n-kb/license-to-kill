@@ -31,7 +31,7 @@
               <div class="article-content">
                 <p class="lede">{{ $t("lede") }}</p>
                 <hr/>
-                <p v-for="(kill, index) in kills_summaries" v-if="index <= current_kill_index" v-html="kill"></p>
+                <p v-for="(kill, index) in kills_summaries" class="kill-summary" v-if="index <= current_kill_index" v-html="kill"></p>
                 <p class="has-text-centered" v-if="current_kill_index < kills_summaries.length">
                   <a class="button is-primary" @click="current_kill_index++">{{ $t("Show another case") }}</a>
                 </p>
@@ -123,7 +123,10 @@
     methods: {
       changeLocale(lang) {
         this.$i18n.locale = lang
+        moment.locale(lang)
+        document.title = this.$t('License to Kill')
         this.makeSummaries()
+        window.history.pushState({}, "", "/?lg=" + lang);
       },
       makeSummaries () {
         var kills_summaries_count = 0
@@ -137,10 +140,6 @@
       },
       makeSummary (kill) {
         var date = moment(kill.date, "YYYY-MM-DD").format("MMMM YYYY")
-
-        if (kill.date_approximate == "1") {
-          date = moment(kill.date, "YYYY-MM-DD").format("YYYY")
-        }
         
         // Killer name block
         var killer_name = ""
@@ -151,6 +150,9 @@
         }
         if (kill.killer_name != null) {
           killer_name = kill.killer_name + ", "  + killer_name + ","
+        }
+        if (kill.killer_name != null && kill.killer_age == null) {
+          killer_name = kill.killer_name
         }
 
         // Victim name block
@@ -171,7 +173,6 @@
         // Car model
         var car_model = ""
         if (kill.weapon != null){
-          car_model = ", "
           if (kill.weapon == "LKW") { car_model += this.$t("using a truck") }
           else if (kill.weapon == "taxi") { car_model += this.$t("using a taxi") }
           else if (kill.weapon == "bus") { car_model += this.$t("using a bus") }
@@ -191,8 +192,6 @@
         if (car_model != null) {
           desc += car_model
         }
-
-        desc += "."
 
         // Punishment
         if (kill.date_trial != null) {
@@ -214,8 +213,8 @@
 
           // Suspended sentence only
           } else if (kill.suspended_sentence_months != null) {
-            desc += this.$t("months-suspended", {duration:kill.suspended_sentence_months})
-            if (kill.fine_penal != "") {
+            desc += this.$t("months-suspended2", {duration:kill.suspended_sentence_months})
+            if (kill.fine_penal != null) {
               desc += this.$t("fine2", {fine:Number(kill.fine_penal).toLocaleString(this.$i18n.locale)})
             }
           }
@@ -243,11 +242,17 @@
       }
     },
     created () {
-      
+
       this.kills = kills_csv
 
-      // Makes summaries
-      this.makeSummaries()
+      // Sets locale from URL GET var
+      if (document.location.toString().indexOf('lg=') != -1) {
+        var pos = document.location.toString().indexOf('lg=')
+        var lang = document.location.toString().substring(pos+3, pos+5)
+        this.changeLocale(lang)
+      } else {
+        this.changeLocale("en")
+      }
       
       // Fetches stats
       this.stats = stats_csv
@@ -281,6 +286,9 @@ h1
 
 .lede
   font-weight: bold
+
+.kill-summary
+  border-bottom: 0.5px dotted lighten($nkb-darkblue, 60%)
 
 .kill-dot
   font-size: 1.6rem
