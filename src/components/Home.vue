@@ -257,6 +257,9 @@
         this.victims["pedestrian"] += Number(this.stats[j]["pedestrian"])
         this.victims["cyclist"] += Number(this.stats[j]["cyclist"])
       }
+      // Discounts for cyclists and pedestrians causing accidents or falling down
+      this.victims["pedestrian"] = Math.floor(this.victims["pedestrian"] * .9 / 10) * 10
+      this.victims["cyclist"] = Math.floor(this.victims["cyclist"] * .9 / 10) * 10
     }
   }
 </script>
