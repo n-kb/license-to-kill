@@ -101,7 +101,6 @@
   import navbar from './Navbar.vue'
   import shareitem from './shareItem.vue'
   import viz from './viz.vue'
-  import { csv } from 'd3-fetch'
   import moment from 'moment'
   import kills_csv from '../assets/kills.csv'
   import stats_csv from '../assets/stats.csv'
