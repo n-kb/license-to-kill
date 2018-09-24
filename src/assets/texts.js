@@ -1,6 +1,6 @@
 const messages = {
   en: {
-     lede: 'Homicides against cyclists or pedestrians in Berlin are often punished with a fine, when at all.',
+     lede: 'An analysis of 88 cases show that homicides against cyclists or pedestrians in Berlin are often punished with a fine, when at all.',
      'Show another case': 'Show another case',
      intro1: 'Since 2008 in Berlin, approximately {pedestrians} pedestrians and {cyclists} cyclists were victims of homicide, killed by drivers of Mercedes, Opels or Renault trucks. I wanted to know who the {total} killers were.',
      intro2: 'Almost all of them (90%) are male. With very few exceptions, none went to jail. Very many who were tried in court kept their driving licence. It is not unusual for the police or the judges to blame the victims instead of punishing the killers.',
@@ -63,7 +63,7 @@ const messages = {
      'fine-civil': ' The family of the victim was awarded {fine} euros in damages.'
   },
   de: {
-     lede: 'Totschläge von Fahrradfahrerinnen und Fußgängerinnen werden in Berlin meistens mit Bußgeld bestraft.',
+     lede: 'Eine Analyse von 88 Fallen zeigt: Totschläge von Fahrradfahrerinnen und Fußgängerinnen werden in Berlin meistens mit Bußgeld bestraft.',
      'Show another case': 'Anderen Fall zeigen',
      intro1: 'Seit 2008 in Berlin, ungefähr {pedestrians} Fußgängerinnen und {cyclists} Fahrradfahrerinnen wurden umgebracht. Die Totschläge wurden von Fahrern von Mercedes, Opels und Renault trucks begangen. Ich wollte wissen, wer die {total} Täter waren.',
      intro2: 'Fast alle (90%) sind Männer. Abgesehen von einigen Ausnahmen, keine wurde verhaftet. Sehr viele von denen dürften ihre Führerschein behalten. Es ist übrigens nicht ungewöhnlich, dass Richter Opfer Mitschuld vorwerfen.',
