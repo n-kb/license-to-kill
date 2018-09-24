@@ -126,7 +126,12 @@
         moment.locale(lang)
         document.title = this.$t('License to Kill')
         this.makeSummaries()
-        window.history.pushState({}, "", "/?lg=" + lang);
+        var original_location = window.location
+        if (window.location.toString().indexOf("?") != -1) {
+          var pos = window.location.toString().indexOf("?")
+          original_location = window.location.toString().substring(0,pos)
+        }
+        window.history.pushState({}, "", original_location + "?lg=" + lang);
       },
       makeSummaries () {
         var kills_summaries_count = 0
