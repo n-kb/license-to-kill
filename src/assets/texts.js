@@ -84,7 +84,7 @@ const messages = {
      'Newsletter': 'Newsletter',
      newsletter1: 'Schreiben Sie Ihre Email Adresse um meine nächsten Essays (meisten auf Englisch) direkt per Email zu bekommen.',
      'Your e-mail address here': 'Ihre Email Adresse hier',
-     'Submit': 'Losschicken',
+     'Submit': 'Abschicken',
      'An interactive database by': 'Eine Datenbank von',
      '20 September 2018': '25. September 2018',
      'License to Kill': 'Lizenz zum Töten',
