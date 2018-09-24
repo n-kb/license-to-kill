@@ -11,6 +11,7 @@ wget  -O src/assets/stats.csv "https://docs.google.com/spreadsheets/d/e/2PACX-1v
 npm run build
 
 # rename dist dir
+rm -r docs
 mv dist docs
 
 # Sends to Github
