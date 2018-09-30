@@ -2,7 +2,7 @@ const messages = {
   en: {
      lede: 'An analysis of 88 cases shows that homicides against cyclists or pedestrians in Berlin are often punished with a fine, when at all.',
      'Show another case': 'Show another case',
-     intro1: 'Since 2008 in Berlin, approximately {pedestrians} pedestrians and {cyclists} cyclists were victims of homicide, killed by drivers of Mercedes, Opels or Renault trucks. I wanted to know who the {total} killers were.',
+     intro1: 'Since 2008 in Berlin, approximately {pedestrians} pedestrians and {cyclists} cyclists were victims of homicide, killed by drivers of Mercedes, Opels or Renault Trucks. I wanted to know who the {total} killers were.',
      intro2: 'Almost all of them (90%) are male. With very few exceptions, none went to jail. Very many who were tried in court kept their driving license. It is not unusual for the police or the judges to blame the victims instead of punishing the killers.',
      intro3: 'Click on the dots to read the stories of the {total} car- or truck-induced homicides that took place in Berlin since 2008.',
      'means that the homicide is documented.': 'means that the homicide is documented.', 
