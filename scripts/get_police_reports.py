@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 base_url = "https://www.berlin.de/polizei/polizeimeldungen/archiv/%d/?page_at_1_0=%d"
 
-for year in range(2014, 2018):
+for year in range(2019, 2020):
 	page = 1
 	is_404 = False
 	while is_404 == False:
@@ -17,7 +17,7 @@ for year in range(2014, 2018):
 			soup = BeautifulSoup(r.text, 'html.parser')
 
 			for item in soup.findAll("li", {"class": "row-fluid"}):
-				title = item.find("a").text
+				title = item.find("a").text.lower()
 				link = item.find("a").get("href")
-				if ("verstorben" in title):
+				if ("verstorben" in title or "tödlich" in title):
 					print(title, "https://www.berlin.de" + link)
