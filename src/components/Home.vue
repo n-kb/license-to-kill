@@ -262,7 +262,7 @@
       // Fetches stats
       this.stats = stats_csv
       // Counts the number of victims
-      for(var j = 0; j <= 2018 - 2008; j++) {
+      for(var j = 0; j <= 2019 - 2008; j++) {
         this.victims["pedestrian"] += Number(this.stats[j]["pedestrian"])
         this.victims["cyclist"] += Number(this.stats[j]["cyclist"])
       }

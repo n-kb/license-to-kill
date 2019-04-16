@@ -55,7 +55,7 @@ export default {
 
       // Creates a complete array of objects, including kills for which there is no information
       var start_year = 2008
-      var end_year = 2018
+      var end_year = 2019
       // Counts the number of documented kills per year
       var documented_kills = {}
       for(var year = start_year; year <= end_year ; year++) {

@@ -1,6 +1,6 @@
 const messages = {
   en: {
-     lede: 'An analysis of 88 cases shows that homicides against cyclists or pedestrians in Berlin are often punished with a fine, when at all.',
+     lede: 'An analysis of 101 cases shows that homicides against cyclists or pedestrians in Berlin are often punished with a fine, when at all.',
      'Show another case': 'Show another case',
      intro1: 'Since 2008 in Berlin, approximately {pedestrians} pedestrians and {cyclists} cyclists were victims of homicide, killed by drivers of Mercedes, Opels or Renault Trucks. I wanted to know who the {total} killers were.',
      intro2: 'Almost all of them (90%) are male. With very few exceptions, none went to jail. Very many who were tried in court kept their driving license. It is not unusual for the police or the judges to blame the victims instead of punishing the killers.',
@@ -23,7 +23,7 @@ const messages = {
      'Your e-mail address here': 'Your e-mail address here',
      'Submit': 'Submit',
      'An interactive database by': 'An interactive database by',
-     '20 September 2018': '25 September 2018',
+     '20 September 2018': '25 September 2018 (updated April 2019)',
      'License to Kill': 'License to Kill',
      'Share': 'Share',
      summary : {
@@ -63,7 +63,7 @@ const messages = {
      'fine-civil': ' The family of the victim was awarded {fine} euros in damages'
   },
   de: {
-     lede: 'Eine Analyse von 88 Fallen zeigt: Totschläge an Fahrradfahrerinnen und Fußgängerinnen werden in Berlin meistens mit Bußgeld bestraft.',
+     lede: 'Eine Analyse von 101 Fallen zeigt: Totschläge an Fahrradfahrerinnen und Fußgängerinnen werden in Berlin meistens mit Bußgeld bestraft.',
      'Show another case': 'Anderen Fall zeigen',
      intro1: 'Seit 2008 in Berlin wurden ungefähr {pedestrians} Fußgängerinnen und {cyclists} Fahrradfahrerinnen umgebracht. Die Totschläge wurden von Fahrern von Mercedes, Opels und Renault Trucks begangen. Ich wollte wissen, wer die {total} Täter waren.',
      intro2: 'Fast alle (90%) sind Männer. Abgesehen von einigen Ausnahmen, wurde keiner verhaftet. Sehr viele von ihnen durften ihren Führerschein behalten. Es ist nicht ungewöhnlich, dass Richter Opfer Mitschuld vorwerfen.',
@@ -78,7 +78,7 @@ const messages = {
      para3: 'Wenn Fahrradfahrerinnen in Sicherheit durch die Stadt fahren möchten, sollten sie auf ihr Vorfahrtrecht verzichten, <a href="https://www.abendblatt.de/hamburg/article208510437/Lkw-Unfaelle-mit-Radfahrern-So-koennen-Sie-sich-schuetzen.html" target="_blank">sagt der ADAC</a>, ein Interessenverband für Autofahrer. Laut dem ADAC sollte das Recht zum Leben von Fahrradfahrerinnen nur gewährt werden, wenn sie sich völlig Autos und LKW unterwerfen.',
      'Attempted murder': 'Mordversuch',
      para4: 'Viele Totschlagfälle gegen Fahrradfahrerinnen und Fußgängerinnen werden nie von einem Gericht verurteilt, oft weil Staatsanwälten keine Täter sehen (es seien unvermeidbare Unfälle, heißt es). Es ist aber schon passiert, dass Berliner Staatsanwälte wegen Mord oder Mordversuch gegen Autofahrer vorgegangen sind. In einem Fall wurden Raser, die auf dem Ku\'damm einen anderen Autofahrer getötet hatten, <a href="https://www.bz-berlin.de/tatort/menschen-vor-gericht/verteidiger-der-kudamm-raser-plaedieren-auf-fahrlaessigkeit" target="_blank">wegen Mord verfolgt</a>. In einem anderen Fall wurde einen Mann, der eine Polizeikontrolle entgehen wollte, in einer kleinen Straße raste und ein Kind und seine Mutter fast totfuhr, <a href="https://www.rbb24.de/panorama/beitrag/2018/09/autoraser-berlin-urteil-versuchter-mord.html" target="_blank">mit Mordversuch angeklagt</a> (der Richter gab ihm 13 Jahre Haft).',
-     para5: 'Autofahrer als Mörder zu betrachten ist in Deutschland keine Selbstverständlichkeit. Das erste Urteil (die Raser vom Ku\'damm) wurde vor dem Bundesgerichtshof <a href="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&Datum=Aktuell&nr=81300&linked=pm" target="_blank">aufgehoben</a>. Dass man 160 Kilometer pro Stunde mitten in der Stadt fährt heiße nicht, dass man töten will, sagten die Karlsruher Richter.',
+     para5: 'Autofahrer als Mörder zu betrachten ist in Deutschland keine Selbstverständlichkeit. Das erste Urteil (die Raser vom Ku\'damm) wurde zunächst vor dem Bundesgerichtshof <a href="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&Art=en&Datum=Aktuell&nr=81300&linked=pm" target="_blank">aufgehoben</a>. Dass man 160 Kilometer pro Stunde mitten in der Stadt fährt heiße nicht, dass man töten will, sagten die Karlsruher Richter. (In einem anderen Fall hat der BGH dann jedoch <a href="https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2019/2019026.html?nn=10690868" target="_blank">geurteilt</a>, dass 155 Stundenkilometer auf der Gegenfahrbahn doch als Mord einzustufen sind.)',
      para6: 'Autofahrer, auch wenn sie rasen, auch wenn sie betrunken fahren, können nur wegen fahrlässigem Totschlag verfolgt werden. Andererseits wird eine Störung des Autoverkehrs sofort als Mord verfolgt. Ein Typ, der Steine auf der Autobahn A10 geworfen hatte <a href="https://www.morgenpost.de/berlin-aktuell/article105822215/Steinwuerfe-auf-der-A10-sind-versuchter-Mord.html" target="_blank">wurde mit versuchtem Mord angeklagt</a>. In einem anderen Fall wurden zwei Jungen, die "aus Langeweile" eine Stahlplatte auf die Autobahn geworfen hatten <a href="https://www.morgenpost.de/berlin/article103220377/Zwei-Berliner-warfen-Stahlplatte-auf-Autobahn.html" target="_blank">ebenso als Mörder betrachtet</a>.',
      para7: 'Eine kleine, fast nur männliche Gruppe von Autofahrern, unterstützt von der Polizei und der Justiz, besitzt das enorme Privileg, andere töten zu dürfen, ohne dabei erhebliche Folgen fürchten zu müssen. Ihren Opfer, meistens Fahrradfahrerinnen und Fußgängerinnen, wird oft die Schuld vorgeworfen wenn sie versuchen, am Leben zu bleiben. Solange diese Kultur der Straflosigkeit weitergeht werden Fahrradfahrerinnen und Fußgängerinnen weiter sterben, und Berlin wird <a href="https://blog.nkb.fr/danger-cyclists/" target="_blank">die gefährlichste Großstadt Europas</a> bleiben.',
      'Newsletter': 'Newsletter',
@@ -86,7 +86,7 @@ const messages = {
      'Your e-mail address here': 'Ihre Email Adresse hier',
      'Submit': 'Abschicken',
      'An interactive database by': 'Eine Datenbank von',
-     '20 September 2018': '25. September 2018',
+     '20 September 2018': '25. September 2018 (aktualisiert April 2019)',
      'License to Kill': 'Lizenz zum Töten',
      'Share': 'Teilen',
      summary : {
